@@ -1,0 +1,127 @@
+.cell-el {
+    width: calc(100% / 10 - 50px);
+    height: 100px;
+    border: solid 1px darkgray;
+    font-family: Tahoma;
+    font-size: 22px;
+}
+
+.mendeleev {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mendeleev > div {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+
+.mendeleev > div > .element {
+    width: calc(100% / 10);
+}
+
+.mendeleev {
+    border: darkgray 1px solid;
+}
+
+.mendeleev .row1 {
+}
+
+.mendeleev .row2 {
+}
+
+.mendeleev .element {
+    font-family: Tahoma;
+    transition: background 1s ease;
+    padding: 8px;
+    border: darkgray solid 1px;
+    min-width: 100px;
+    border-radius: 10px;
+}
+
+.mendeleev .element .sign {
+    font-size: 35px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.mendeleev .element .number {
+    font-size: 18px;
+    display: inline-block;
+    float: right;
+}
+
+.mendeleev .element .name {
+    font-size: 20px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.mendeleev .element .mass {
+    font-size: 12px;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
+/*-- red -----------------------------------------------*/
+
+.mendeleev .element.red {
+    background-color: #ff006a;
+}
+
+.mendeleev .element.red:hover {
+    background-color: #601131;
+}
+
+.mendeleev .element.red .sign {
+    color: black;
+}
+
+.mendeleev .element.red .number {
+    color: white;
+}
+
+.mendeleev .element.red .name {
+    color: white;
+}
+
+.mendeleev .element.red .mass {
+    color: white;
+}
+
+/*-- yellow -----------------------------------------------*/
+
+.mendeleev .element.yellow {
+    background-color: #ffe600;
+}
+
+.mendeleev .element.yellow:hover {
+    background-color: #999013;
+}
+
+.mendeleev .element.yellow .sign {
+    color: black;
+}
+
+.mendeleev .element.yellow .number {
+    color: black;
+}
+
+.mendeleev .element.yellow .name {
+    color: black;
+}
+
+.mendeleev .element.yellow .mass {
+    color: black;
+}
+
+
+/* = = = = = = ANIMATION = = = = */
+.mendeleev .element:hover {
+}

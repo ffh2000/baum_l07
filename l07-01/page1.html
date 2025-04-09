@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>Социальная сеть</title>
+</head>
+<style>
+
+    .content {
+        display: flex;
+        margin: 50px 16px 24px 32px;
+    }
+
+    .left-menu {
+        width: 240px;
+        margin: 0px 16px 0px 0px;
+        position: fixed;
+    }
+
+    .centr {
+        margin: 0px 0px 0px 250px;
+    }
+
+    .centr .card {
+        margin: 8px 0 8px 0;
+    }
+
+    body {
+        padding: 16px !important;
+    }
+
+    .top-menu {
+        position: fixed;
+        width: calc(100% - 24px);
+        background: white;
+        padding: 10px;
+        z-index: 99;
+    }
+</style>
+<body>
+
+<div class="top-menu">
+    <div class="input-group" style="alignment: right">
+        <input type="text" class="form-control" aria-label="Поиск">
+        <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor"
+                                            class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+</svg></span>
+    </div>
+</div>
+
+<!-- Левое меню -->
+
+<div class="content">
+    <div class="left-menu">
+        <div class="accordion" id="left-menu">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Пользователь
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Имя пользователя<br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Публикации
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Музыка<br>
+                        Картинки<br>
+                        Фильмы
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Приложения
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Tetris<br>
+                        Ферма<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Центральная часть -->
+    <div class="centr">
+        <div class="alert alert-success" role="alert">
+            С днем рождения!
+        </div>
+
+        <div class="card">
+            <div class="card-header text-bg-warning">
+                Цитата
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>Если у тебя есть фонтан, заткни его; дай отдохнуть и фонтану</p>
+                    <footer class="blockquote-footer">Козьма Прутков</footer>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="img\4buraska.jpg" class="card-img-top" alt="Друг">
+            <div class="card-body">
+                <h5 class="card-title">Новая серия</h5>
+                <p class="card-text">Мохнатого непоседливого Чебурашку из далекой апельсиновой страны ждут удивительные
+                    приключения в тихом приморском городке...</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="img\4buraska.jpg" class="card-img-top" alt="Друг">
+            <div class="card-body">
+                <h5 class="card-title">Новая серия</h5>
+                <p class="card-text">Мохнатого непоседливого Чебурашку из далекой апельсиновой страны ждут удивительные
+                    приключения в тихом приморском городке...</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

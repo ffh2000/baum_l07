@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>Социальная сеть</title>
+</head>
+<body>
+
+<div class="modal" style="display: block" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Моя социальная сеть</h5>
+            </div>
+            <div class="modal-body">
+                <p>Добро пожаловать в нашу учебную социальную сеть.</p>
+                <br>
+                <form>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="username">Login</span>
+                        <input type="text" class="form-control" placeholder="Имя пользователя" aria-label="Имя пользователя" aria-describedby="username">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="password">Password</span>
+                        <input type="password" class="form-control" placeholder="Введите пароль" aria-label="Пароль" aria-describedby="password">
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-secondary" href="page1.html">Перейти</a>
+                <button type="button" class="btn btn-primary" onclick="window.location.href = 'page1.html'">Войти</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
